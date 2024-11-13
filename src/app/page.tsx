@@ -1,9 +1,10 @@
-// import Image from "next/image";
+// import Image from 'next/image';
 
-export default function Home() {
-  return (
-    <main className="flex">
-      <h1 className="text-red-700">hello</h1>
-    </main>
-  );
-}
+const Home = () => (
+  <>
+    <h1 className="">hello</h1>
+    <h2>hi</h2>
+  </>
+);
+
+export default Home;
