@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { HttpMethodContextProvider } from '@/context/httpRequestHandler';
 
 interface ILayoutHocProp {
   children: React.ReactNode;
@@ -9,7 +10,9 @@ interface ILayoutHocProp {
 const LayoutHoc: React.FC<ILayoutHocProp> = ({ children }) => {
   const [queryClient] = useState(() => new QueryClient());
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <HttpMethodContextProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </HttpMethodContextProvider>
   );
 };
 
