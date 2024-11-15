@@ -1,4 +1,4 @@
-# Project Name
+# Next 14 setup
 
 This project is a production-ready, scalable web application built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Husky**, **ESLint**, and **Prettier**. The setup is designed to streamline development and maintain code quality across large-scale projects.
 
@@ -11,9 +11,7 @@ This project is a production-ready, scalable web application built with **Next.j
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Scripts](#scripts)
-- [Folder Structure](#folder-structure)
 - [Code Quality](#code-quality)
-- [Contributing](#contributing)
 
 ## Overview
 
@@ -42,3 +40,53 @@ This project is set up with a **Next.js 14** architecture optimized for performa
 
 - **Node.js** (>=14.0.0)
 - **npm** or **yarn**
+
+## Scripts
+
+- **`dev`**: Starts the development server.
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+
+  ```
+- **`build`**: Build for production.
+  ```bash
+  npm run build
+  # or
+  yarn build
+
+  ```
+- **`start`**: Runs the production build.
+  ```bash
+  npm run start
+  # or
+  yarn
+
+  ```
+- **`lint`**: Runs ESLint to check for code issues.
+  ```bash
+  npm run lint
+  # or
+  yarn lint
+
+  ```
+- **`format`**: Formats code using Prettier.
+  ```bash
+  npm run format
+  # or
+  yarn format
+
+  ```
+
+## Code Quality
+
+- **ESLint:** Code linter for TypeScript and JavaScript
+- **Prettier:** Code formatter for consistent styling.
+- **Husky:** Pre-commit hooks to run linting and formatting checks
+
+### Clone the repository
+
+```
+git clone https://github.com/dev-avinashh/next-14-setup.git
+```
