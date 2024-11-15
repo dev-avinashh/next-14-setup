@@ -1,4 +1,5 @@
 'use client';
+import { getToken } from '@/utils/tokenUtills';
 import axios, { AxiosInstance } from 'axios';
 
 // Fallback URL in case environment variable is not set
@@ -16,7 +17,7 @@ const axiosInstance: AxiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     if (typeof window !== 'undefined') {
-      const token = localStorage.getItem('token');
+      const token = getToken();
       if (token && config.headers) {
         config.headers['Authorization'] = `Bearer ${token}`;
       }

@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name
+
+This project is a production-ready, scalable web application built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Husky**, **ESLint**, and **Prettier**. The setup is designed to streamline development and maintain code quality across large-scale projects.
+
+**Note:** No component library has been included in this setup. A component library can be added as needed based on project requirements.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Folder Structure](#folder-structure)
+- [Code Quality](#code-quality)
+- [Contributing](#contributing)
+
+## Overview
+
+This project is set up with a **Next.js 14** architecture optimized for performance, scalability, and maintainability. It includes **TypeScript** for type safety, **Tailwind CSS** for responsive styling, and pre-commit hooks with **Husky** to enforce code quality standards using **ESLint** and **Prettier**.
+
+## Tech Stack
+
+- **Next.js 14** - React framework for production-level applications
+- **TypeScript** - Strongly-typed JavaScript for maintainable code
+- **Tailwind CSS** - Utility-first CSS framework
+- **Husky** - Git hooks for pre-commit and pre-push checks
+- **ESLint** - JavaScript and TypeScript linter
+- **Prettier** - Code formatting tool
+
+## Features
+
+- **Modular architecture** for scalable and maintainable code
+- **Automatic type checking** with TypeScript
+- **Utility-first styling** with Tailwind CSS
+- **Code quality enforcement** with ESLint and Prettier
+- **Pre-commit hooks** with Husky to prevent committing unformatted or error-prone code
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Node.js** (>=14.0.0)
+- **npm** or **yarn**

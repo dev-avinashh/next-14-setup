@@ -1,4 +1,4 @@
-import { fetchData } from './apiService';
+import { handleRequests } from './apiService';
 
 export const handleRegister = async (
   name: string,
@@ -7,12 +7,12 @@ export const handleRegister = async (
 ) => {
   try {
     const data = { name, email, password };
-    const response = await fetchData({
+    const response = await handleRequests({
       endpoint: '/create',
       method: 'POST',
       data,
       params: { search: 'check' },
-      isTokenRequired: false, // isTokenRequired = false for registration
+      isTokenRequired: false,
     });
 
     return response;

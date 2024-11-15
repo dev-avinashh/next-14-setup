@@ -1,18 +1,8 @@
+import { IFetchDataOptions } from '@/types/common';
 import axiosInstance from './axiosClient';
 import axios from 'axios';
 
-type IHttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
-
-interface IFetchDataOptions {
-  endpoint: string;
-  method?: IHttpMethod;
-  data?: object | null;
-  params?: Record<string, any>; // Query parameters
-  isTokenRequired?: boolean;
-  //   cancelToken?: CancelTokenSource; // For canceling requests
-}
-
-export const fetchData = async ({
+export const handleRequests = async ({
   endpoint,
   method = 'GET',
   data = null,

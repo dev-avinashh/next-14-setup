@@ -1,13 +1,9 @@
 'use client';
+
 import React, { ChangeEvent, useState } from 'react';
 import { handleRegister } from '@/services/auth.service';
 import { useMutation } from '@tanstack/react-query';
-
-interface IFormData {
-  name: string;
-  email: string;
-  password: string;
-}
+import { IFormData } from '@/types/common';
 
 export const Signup: React.FC = () => {
   const [formData, setFormData] = useState<IFormData>({
